@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.util.EnchantedViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator_unselected_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="20dp"
+                    app:ci_drawable="@drawable/selecteditem_dot"
+                    app:ci_drawable_unselected="@drawable/nonselecteditem_dot"
+                    app:ci_height="6dp"
+                    app:ci_width="6dp" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/vertical_courses_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 android:background="@color/bg"
+                android:clipToPadding="false"
+                android:padding="@dimen/item_offset" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

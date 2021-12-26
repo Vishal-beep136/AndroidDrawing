@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_go_about"
+            android:checkable="false"
+            android:icon="@drawable/ic_about"
+            android:title="@string/menu_about" />
+
+        <item
+            android:id="@+id/menu_go_rate"
+            android:checkable="false"
+            android:icon="@drawable/ic_rate"
+            android:title="@string/menu_rate_app" />
+
+        <item
+            android:id="@+id/menu_go_share"
+            android:checkable="false"
+            android:icon="@drawable/ic_share"
+            android:title="@string/menu_share_app" />
+        <item
+            android:id="@+id/menu_go_more"
+            android:checkable="false"
+            android:icon="@drawable/ic_more"
+            android:title="@string/menu_moreapp" />
+
+        <item
+            android:id="@+id/menu_go_privacy"
+            android:checkable="false"
+            android:icon="@drawable/ic_privacy"
+            android:title="@string/menu_privacy" />
+
+    </group>
+</menu>

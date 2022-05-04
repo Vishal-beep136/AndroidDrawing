@@ -51,10 +51,12 @@ import java.util.List;
 
 public class DrawingAdapter extends RecyclerView.Adapter {
 
+    //activity context
     private Activity mContext;
     private final int VIEW_TYPE_ITEM = 1;
     private final int VIEW_TYPE_Ad = 0;
     private ArrayList<DrawingListItem> dataList;
+    //progress dialog
     private ProgressDialog pDialog;
 
     public DrawingAdapter(Activity context, ArrayList<DrawingListItem> dataList) {
